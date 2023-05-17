@@ -1,7 +1,7 @@
 import random
 import pandas as pd
 
-numbers = list(range(1,101)) * 5
+numbers = list(range(1,101))
 labels = []
 
 for num in numbers:
@@ -26,4 +26,3 @@ randomized_labels = randomized_labels[:500]
 
 # Convert the number list into a 2D panda DataFrame
 df = pd.DataFrame({'Number': numbers, 'Label': labels})
-print(df)
