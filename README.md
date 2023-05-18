@@ -8,6 +8,13 @@ Table of Contents
     - [Extra Points](#extra-points)
   - [Support Vector Machine (SVM)](#support-vector-machine-svm)
     - [Data Pipeline](#data-pipeline)
+  - [Ten-fold cross-validation](#ten-fold-cross-validation)
+    - [Decision Trees](#decision-trees)
+    - [MLP](#mlp)
+    - [Gaussian Naive Bayes](#gaussian-naive-bayes)
+    - [Random Forest](#random-forest)
+    - [Gradient Boosting](#gradient-boosting)
+    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
 
 ## Problem Description
 
@@ -23,8 +30,8 @@ Write a program that given the numbers from 1 to 100 print “None” for each n
 
 ### Extra Points
 
-- [] Perform a ten folds cross-validation using  different classification algorithms and select the best among them.
-- [] Update the documentation to support the selection (or not) of a new algorithm.
+- [x] Perform a ten folds cross-validation using  different classification algorithms and select the best among them.
+- [x] Update the documentation to support the selection (or not) of a new algorithm.
 - [] Publish the trained model as a web service.
 - [] Create unit tests for the implementation with a test coverage >=80%.
 
@@ -45,3 +52,45 @@ The data pipeline consists of several steps:
 4. Model Initialization: The SVM classifier, specifically the SVC class from the `sklearn.svm module`, is initialized with desired parameters. SVMs are a popular choice for classification tasks and work by finding an optimal hyperplane that separates the different classes in the data.
 
 5. Model Evaluation: The trained model is used to make predictions on the test data. The predicted labels are then compared with the true labels to calculate the accuracy score, which measures the percentage of correct predictions over the total number of samples.
+
+## Ten-fold cross-validation
+
+Performing a ten-fold cross-validation using different classification algorithms and selecting the best among them involves training and evaluating multiple models on different subsets of the dataset.
+
+Here is a general outline of the steps involved:
+
+- The dataset was divided into ten equal-sized folds.
+- For each algorithm under consideration:
+  - The classifier was initialized with the desired parameters.
+  - The ten folds were iterated over, and the following steps were performed:
+    - The classifier was trained on nine folds.
+    - The classifier was evaluated on the remaining fold.
+    - The evaluation metrics, such as accuracy, precision, recall, or F1-score, were collected.
+  - The average performance metrics across the ten folds were calculated for each algorithm.
+- The performance metrics of the algorithms were compared, and the one with the best overall performance was selected.
+
+### Decision Trees
+
+A Decision Tree is a supervised learning algorithm that is commonly used for both classification and regression tasks. It creates a flowchart-like tree structure, where each internal node represents a feature or attribute, each branch represents a decision based on that attribute, and each leaf node represents the outcome or prediction. The goal of the algorithm is to create a tree that can make accurate predictions on unseen data.
+
+The decision-making process in a Decision Tree involves splitting the dataset based on the values of different features. The splitting criterion is typically determined using metrics like Gini impurity or information gain, which measure the homogeneity or purity of the target variable within each branch. The algorithm recursively partitions the data into smaller subsets based on the selected features until it reaches a stopping condition, such as reaching a maximum depth, having a minimum number of samples in a leaf node, or achieving a specific level of purity.
+
+### MLP
+
+MLP is a type of feedforward artificial neural network that consists of multiple layers of nodes (neurons) connected in a directed acyclic graph. It is a powerful and flexible algorithm used for both classification and regression tasks. Each node in the MLP performs a weighted sum of its inputs, applies an activation function to produce an output, and passes it to the nodes in the next layer. The MLP learns to adjust the weights on the connections between nodes to minimize the error between the predicted and actual outputs.
+
+### Gaussian Naive Bayes
+
+It is a probabilistic classifier based on the Bayes' theorem. It assumes that the features are conditionally independent given the class label. It is simple and efficient, making it suitable for both small and large datasets. It is commonly used for text classification and spam filtering tasks.
+
+### Random Forest
+
+It is an ensemble learning method that combines multiple decision trees to make predictions. Each tree is trained on a random subset of the data and features. The final prediction is made by aggregating the predictions of individual trees. Random Forests are robust, handle high-dimensional data well, and can capture complex interactions in the data. They are widely used for classification and regression tasks.
+
+### Gradient Boosting
+
+It is another ensemble learning method that combines multiple weak classifiers (usually decision trees) in a sequential manner. Each new classifier is trained to correct the mistakes made by the previous classifiers. Gradient Boosting is effective in handling imbalanced datasets and can provide high predictive accuracy. It is commonly used in competitions and for tasks where high performance is required.
+
+### K-Nearest Neighbors (KNN)
+
+It is a non-parametric classification algorithm that makes predictions based on the k nearest neighbors in the feature space. KNN does not explicitly learn a model but instead stores all the training instances in memory. It is simple and intuitive and can handle multi-class classification problems. KNN's performance can be influenced by the choice of the number of neighbors (k) and the distance metric used.
