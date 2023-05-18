@@ -18,6 +18,7 @@ Table of Contents
   - [Streamlit](#streamlit)
     - [How to start the web-service?](#how-to-start-the-web-service)
   - [Unittest](#unittest)
+  - [Library Requirements](#library-requirements)
 
 ## Problem Description
 
@@ -117,3 +118,11 @@ Some basic unit tests were implemented to check the correct execution of the svm
 - Test with a DataFrame for binary classification
 - Test with a DataFrame for multiclass classification
 - Test with a DataFrame that should achieve high accuracy
+
+## Library Requirements
+
+- pandas: `pip install pandas`
+- scikit-learn: `pip install scikit-learn`
+- streamlit: `pip install streamlit`
+
+Just know I remember the python env, sorry.
