@@ -26,3 +26,5 @@ randomized_labels = randomized_labels[:500]
 
 # Convert the number list into a 2D panda DataFrame
 df = pd.DataFrame({'Number': numbers, 'Label': labels})
+
+df.to_csv('dataset.csv', index=False)
