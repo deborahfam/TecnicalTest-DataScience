@@ -23,7 +23,7 @@ Write a program that given the numbers from 1 to 100 print “None” for each n
 
 ### Extra Points
 
-- [] Perform a ten folds cross-validation using  different classification algorithms and select the best among them.
+- [x] Perform a ten folds cross-validation using  different classification algorithms and select the best among them.
 - [] Update the documentation to support the selection (or not) of a new algorithm.
 - [] Publish the trained model as a web service.
 - [] Create unit tests for the implementation with a test coverage >=80%.
