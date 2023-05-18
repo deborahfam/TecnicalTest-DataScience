@@ -36,7 +36,7 @@ Write a program that given the numbers from 1 to 100 print “None” for each n
 - [x] Perform a ten folds cross-validation using  different classification algorithms and select the best among them.
 - [x] Update the documentation to support the selection (or not) of a new algorithm.
 - [x] Publish the trained model as a web service.
-- [] Create unit tests for the implementation with a test coverage >=80%.
+- [x] Create unit tests for the implementation with a test coverage >=80%.
 
 ## Support Vector Machine (SVM)
 
