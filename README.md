@@ -15,6 +15,8 @@ Table of Contents
     - [Random Forest](#random-forest)
     - [Gradient Boosting](#gradient-boosting)
     - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
+  - [Streamlit](#streamlit)
+    - [How to start the web-service?](#how-to-start-the-web-service)
 
 ## Problem Description
 
@@ -32,7 +34,7 @@ Write a program that given the numbers from 1 to 100 print “None” for each n
 
 - [x] Perform a ten folds cross-validation using  different classification algorithms and select the best among them.
 - [x] Update the documentation to support the selection (or not) of a new algorithm.
-- [] Publish the trained model as a web service.
+- [x] Publish the trained model as a web service.
 - [] Create unit tests for the implementation with a test coverage >=80%.
 
 ## Support Vector Machine (SVM)
@@ -94,3 +96,12 @@ It is another ensemble learning method that combines multiple weak classifiers (
 ### K-Nearest Neighbors (KNN)
 
 It is a non-parametric classification algorithm that makes predictions based on the k nearest neighbors in the feature space. KNN does not explicitly learn a model but instead stores all the training instances in memory. It is simple and intuitive and can handle multi-class classification problems. KNN's performance can be influenced by the choice of the number of neighbors (k) and the distance metric used.
+
+## Streamlit
+
+Streamlit is a Python library used to create interactive web applications and data visualizations quickly and easily. It allows data scientists and developers to easily create interactive user interfaces for their models, visualizations and applications without having to spend a lot of time on web development.
+
+### How to start the web-service?
+
+1. Install streamlit with the following command: `pip install streamlit`.
+2. Execute the command: `streamlit streamlit_app.py` in the terminal.
