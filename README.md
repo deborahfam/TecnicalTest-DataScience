@@ -11,6 +11,10 @@ Table of Contents
   - [Ten-fold cross-validation](#ten-fold-cross-validation)
     - [Decision Trees](#decision-trees)
     - [MLP](#mlp)
+    - [Gaussian Naive Bayes](#gaussian-naive-bayes)
+    - [Random Forest](#random-forest)
+    - [Gradient Boosting](#gradient-boosting)
+    - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
 
 ## Problem Description
 
@@ -74,3 +78,19 @@ The decision-making process in a Decision Tree involves splitting the dataset ba
 ### MLP
 
 MLP is a type of feedforward artificial neural network that consists of multiple layers of nodes (neurons) connected in a directed acyclic graph. It is a powerful and flexible algorithm used for both classification and regression tasks. Each node in the MLP performs a weighted sum of its inputs, applies an activation function to produce an output, and passes it to the nodes in the next layer. The MLP learns to adjust the weights on the connections between nodes to minimize the error between the predicted and actual outputs.
+
+### Gaussian Naive Bayes
+
+It is a probabilistic classifier based on the Bayes' theorem. It assumes that the features are conditionally independent given the class label. It is simple and efficient, making it suitable for both small and large datasets. It is commonly used for text classification and spam filtering tasks.
+
+### Random Forest
+
+It is an ensemble learning method that combines multiple decision trees to make predictions. Each tree is trained on a random subset of the data and features. The final prediction is made by aggregating the predictions of individual trees. Random Forests are robust, handle high-dimensional data well, and can capture complex interactions in the data. They are widely used for classification and regression tasks.
+
+### Gradient Boosting
+
+It is another ensemble learning method that combines multiple weak classifiers (usually decision trees) in a sequential manner. Each new classifier is trained to correct the mistakes made by the previous classifiers. Gradient Boosting is effective in handling imbalanced datasets and can provide high predictive accuracy. It is commonly used in competitions and for tasks where high performance is required.
+
+### K-Nearest Neighbors (KNN)
+
+It is a non-parametric classification algorithm that makes predictions based on the k nearest neighbors in the feature space. KNN does not explicitly learn a model but instead stores all the training instances in memory. It is simple and intuitive and can handle multi-class classification problems. KNN's performance can be influenced by the choice of the number of neighbors (k) and the distance metric used.
