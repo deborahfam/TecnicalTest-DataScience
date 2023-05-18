@@ -17,6 +17,7 @@ Table of Contents
     - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
   - [Streamlit](#streamlit)
     - [How to start the web-service?](#how-to-start-the-web-service)
+  - [Unittest](#unittest)
 
 ## Problem Description
 
@@ -105,3 +106,14 @@ Streamlit is a Python library used to create interactive web applications and da
 
 1. Install streamlit with the following command: `pip install streamlit`.
 2. Execute the command: `streamlit streamlit_app.py` in the terminal.
+
+## Unittest
+
+`unittest` is a Python module that provides a framework for writing and running unit tests. Unit tests are a way to verify that a program's code works correctly at the unit level, that is, by testing each individual component in isolation.
+
+Some basic unit tests were implemented to check the correct execution of the svm_model code:
+
+- Test the SVM_model function
+- Test with a DataFrame for binary classification
+- Test with a DataFrame for multiclass classification
+- Test with a DataFrame that should achieve high accuracy
