@@ -16,7 +16,8 @@ Table of Contents
     - [Gradient Boosting](#gradient-boosting)
     - [K-Nearest Neighbors (KNN)](#k-nearest-neighbors-knn)
   - [Streamlit](#streamlit)
-    - [How to start the web-service?](#how-to-start-the-web-service)
+    - [How to start the web-service local?](#how-to-start-the-web-service-local)
+    - [How to access the host page?](#how-to-access-the-host-page)
   - [Unittest](#unittest)
   - [Library Requirements](#library-requirements)
 
@@ -103,10 +104,16 @@ It is a non-parametric classification algorithm that makes predictions based on 
 
 Streamlit is a Python library used to create interactive web applications and data visualizations quickly and easily. It allows data scientists and developers to easily create interactive user interfaces for their models, visualizations and applications without having to spend a lot of time on web development.
 
-### How to start the web-service?
+### How to start the web-service local?
 
 1. Install streamlit with the following command: `pip install streamlit`.
 2. Execute the command: `streamlit streamlit_app.py` in the terminal.
+
+### How to access the host page?
+
+(Needs VPN)
+
+https://deborahfam-tecnicaltest-datascience-streamlit-app-vjvrat.streamlit.app/
 
 ## Unittest
 
